@@ -1,0 +1,133 @@
+set editing-mode vi
+$if mode=vi
+	# insert mode
+	set keymap vi-insert
+	# remap escape		
+	"sv": vi-movement-mode 
+$endif 
+
+$if mode=vi
+	# insert mode
+	set keymap vi-insert
+	# remap escape		
+	"SV": vi-movement-mode 
+$endif 
+
+$if mode=vi
+	set keymap vi-insert 
+        # remap enter
+	"ff": accept-line
+$endif 
+
+$if mode=vi
+	set keymap vi-command
+        # remap enter
+	"ff": accept-line
+$endif 
+
+$if mode=vi
+	set keymap vi-insert 
+        # oo to p 
+	"hh" "p" : self-insert
+$endif 
+
+$if mode=vi
+	set keymap vi-command
+        #havnt gotten this one working
+	"tr" : undo
+$endif 
+
+$if mode=vi
+	set keymap vi-insert 
+        # ttm to / 
+	"ttm" "/" : self-insert
+$endif
+
+$if mode=vi
+	set keymap vi-insert 
+        # ttn to ? 
+	"ttn" "?" : self-insert
+$endif
+
+$if mode=vi
+	set keymap vi-insert 
+        # ttb to . 
+	"ttb" "." : self-insert
+$endif
+
+$if mode=vi
+	set keymap vi-insert 
+        # ttv to , 
+	"ttv" "," : self-insert
+$endif
+
+$if mode=vi
+	set keymap vi-insert 
+        # ttz to < 
+	"ttz" "<" : self-insert
+$endif
+
+$if mode=vi
+	set keymap vi-insert 
+        # ttx to > 
+	"ttx" ">" : self-insert
+$endif
+
+$if mode=vi
+	set keymap vi-insert 
+        # tth to ; 
+	"tth" ";" : self-insert
+$endif
+
+$if mode=vi
+	set keymap vi-insert 
+        # ttj to : 
+	"ttj" ":" : self-insert
+$endif
+
+$if mode=vi
+    set keymap vi-insert
+        # : to : 
+    "tt5" "-" : self-insert
+$endif
+$if mode=vi
+    set keymap vi-insert
+        # : to : 
+    "tt6" "_" : self-insert
+$endif
+
+$if mode=vi
+    set keymap vi-insert
+    "tt7" "+" : self-insert
+$endif
+
+$if mode=vi
+    set keymap vi-insert
+    "tt8" "=" : self-insert
+$endif
+
+$if mode=vi
+    set keymap vi-insert
+    "tt9" "()" : self-insert
+$endif
+
+
+$if mode=vi
+    set keymap vi-insert
+    "ttl" """" : 
+$endif
+
+$if mode=vi
+    set keymap vi-insert
+    "ttk" "''" : 
+$endif
+
+
+# command mode bindings
+set keymap vi-command
+"B": beginning-of-line
+set keymap vi-command
+"E": end-of-line:
+
+
+
